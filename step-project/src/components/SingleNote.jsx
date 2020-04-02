@@ -11,6 +11,10 @@ export function SingleNote({ history: { push }, match: { params: { id } } }) {
 
   return (
     <div>
+      <h1>Example</h1>
+      <h1>Test1</h1>
+      <h1>It works</h1>
+  
       Single Note
       {note && (
         <SingleItem color={note.color}>
@@ -18,6 +22,7 @@ export function SingleNote({ history: { push }, match: { params: { id } } }) {
           <p> {note.text}</p>
           <p> {note.date}</p>
           <p> {note.isCompleted}</p>
+
         </SingleItem>
       )}
 
